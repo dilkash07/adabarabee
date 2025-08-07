@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
   theme: {
     extend: {
+      fontFamily: {
+        arabic: ["'Amiri', serif"], // or your chosen Arabic font
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

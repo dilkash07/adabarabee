@@ -1,3 +1,97 @@
+// import { useForm } from "react-hook-form";
+// import { zodResolver } from "@hookform/resolvers/zod";
+// import {
+//   ForgotPasswordFormValues,
+//   forgotPasswordSchema,
+// } from "@/schemas/forgotPassword.schema";
+// import {
+//   Form,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormControl,
+//   FormMessage,
+// } from "@/components/ui/form";
+// import { Input } from "../ui/input";
+// import { Button } from "../ui/button";
+// import { MdEmail } from "react-icons/md";
+// import { ArrowLeft } from "lucide-react";
+// import { Link } from "react-router-dom";
+
+// const ForgotPasswordForm = () => {
+//   const form = useForm<ForgotPasswordFormValues>({
+//     resolver: zodResolver(forgotPasswordSchema),
+//     defaultValues: {
+//       email: "",
+//     },
+//   });
+
+//   const onSubmit = (data: ForgotPasswordFormValues) => {
+//     console.log("Forgot Password Data:", data);
+//   };
+
+//   return (
+//     <div className="w-full max-w-md mx-auto p-6 rounded-2xl shadow-md bg-background text-foreground border border-border">
+//       {/* Header */}
+//       <div className="flex flex-col gap-2 items-center mb-6">
+//         <MdEmail size={56} className="text-primary" />
+//         <h1 className="text-3xl font-arabic italic font-semibold text-primary text-center">
+//           نسيت كلمة المرور؟
+//         </h1>
+//         <p className="text-sm text-muted-foreground text-center">
+//           لا تقلق! فقط أدخل بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة
+//           المرور.
+//         </p>
+//       </div>
+
+//       {/* Form */}
+//       <Form {...form}>
+//         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+//           <FormField
+//             control={form.control}
+//             name="email"
+//             render={({ field }) => (
+//               <FormItem>
+//                 <FormLabel>Email Address</FormLabel>
+//                 <FormControl>
+//                   <Input
+//                     type="email"
+//                     placeholder="you@example.com"
+//                     autoComplete="email"
+//                     {...field}
+//                   />
+//                 </FormControl>
+//                 <FormMessage />
+//               </FormItem>
+//             )}
+//           />
+
+//           <div>
+//             <Button
+//               type="submit"
+//               className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+//             >
+//               Send Reset Link
+//             </Button>
+//           </div>
+//         </form>
+//       </Form>
+
+//       {/* Back to login */}
+//       <div className="mt-6 text-center">
+//         <Link
+//           to="/login"
+//           className="flex justify-center items-center gap-1 text-sm hover:text-accent hover:underline text-muted-foreground"
+//         >
+//           العودة إلى تسجيل الدخول
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ForgotPasswordForm;
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -12,11 +106,10 @@ import {
   FormControl,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import { ArrowLeft } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { MdLockReset } from "react-icons/md";
+import { MailCheck, ArrowLeft } from "lucide-react";
 
 const ForgotPasswordForm = () => {
   const form = useForm<ForgotPasswordFormValues>({
@@ -26,53 +119,62 @@ const ForgotPasswordForm = () => {
     },
   });
 
-  const onsubmit = (data: ForgotPasswordFormValues) => {
-    console.log("Form Data: ", data);
+  const onSubmit = (data: ForgotPasswordFormValues) => {
+    console.log("Forgot Password Data:", data);
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 rounded-2xl shadow-md bg-white dark:bg-zinc-900">
-      <div className="flex flex-col gap-2 items-center mb-6">
-        <MdLockReset size={56} />
-        <h1 className="text-3xl font-serif italic font-semibold mb-4 text-center">
-          Forgot Your Passwrod?
+    <div className="w-full max-w-md mx-auto p-6 rounded-2xl shadow-lg bg-background text-foreground border border-border font-arabic">
+      {/* Header */}
+      <div className="flex flex-col items-center gap-2 mb-6 text-center">
+        <MailCheck size={56} className="text-primary" />
+        <h1 className="text-3xl font-semibold text-primary">
+          نسيت كلمة المرور؟
         </h1>
-        <p className="text-sm italic text-center">
-          Don’t worry, we’ve got you covered. Enter your email below, and we’ll
-          send you a link to reset your password. If you can’t access your
-          email, please try our account recovery options.
+        <p className="text-sm text-muted-foreground">
+          أدخل بريدك الإلكتروني لإرسال رابط إعادة تعيين كلمة المرور.
         </p>
       </div>
 
+      {/* Form */}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onsubmit)} className="space-y-2">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          {/* Email */}
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>البريد الإلكتروني</FormLabel>
                 <FormControl>
-                  <Input placeholder="john@example.com" {...field} />
+                  <Input
+                    type="email"
+                    placeholder="example@email.com"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <div className="pt-4">
-            <Button type="submit" className="w-full">
-              Send Reset Link
-            </Button>
-          </div>
+
+          {/* Submit */}
+          <Button
+            type="submit"
+            className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            إرسال رابط إعادة التعيين
+          </Button>
         </form>
       </Form>
 
-      <div className="mt-4">
+      {/* Footer */}
+      <div className="mt-4 text-center">
         <Link
-          to={"/login"}
-          className="flex gap-1 items-center justify-center hover:underline"
+          to="/login"
+          className="flex justify-center items-center gap-1 text-sm text-muted-foreground hover:underline"
         >
-          <ArrowLeft size={18} /> Back to Login
+          <ArrowLeft size={18} /> العودة إلى تسجيل الدخول
         </Link>
       </div>
     </div>
