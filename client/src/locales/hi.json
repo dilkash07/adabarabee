@@ -1,0 +1,15 @@
+{
+  "siteName": "अरबी कविता ब्लॉग",
+  "home": "होम",
+  "poems": "कविताएँ",
+  "authors": "लेखक",
+  "about": "हमारे बारे में",
+  "signup": "साइन अप",
+  "login": "लॉगिन",
+  "email": "ईमेल",
+  "password": "पासवर्ड",
+  "confirmPassword": "पासवर्ड की पुष्टि करें",
+  "forgotPassword": "पासवर्ड भूल गए?",
+  "sendResetLink": "रीसेट लिंक भेजें",
+  "backToLogin": "लॉगिन पर वापस जाएँ"
+}

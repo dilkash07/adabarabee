@@ -1,0 +1,15 @@
+{
+  "siteName": "Arabic Poetry Blog",
+  "home": "Home",
+  "poems": "Poems",
+  "authors": "Authors",
+  "about": "About Us",
+  "signup": "Sign Up",
+  "login": "Log In",
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "forgotPassword": "Forgot Password?",
+  "sendResetLink": "Send Reset Link",
+  "backToLogin": "Back to Login"
+}

@@ -200,11 +200,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff, User, UserRoundPen } from "lucide-react";
-import { CgProfile } from "react-icons/cg";
+import { CgProfile, CgLogIn } from "react-icons/cg";
+import { useTranslation } from "react-i18next";
 
 const SignupForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const { t } = useTranslation();
 
   const form = useForm<SignupFormValues>({
     resolver: zodResolver(signupSchema),

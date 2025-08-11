@@ -8,10 +8,20 @@ import Navbar from "./components/core/navbar";
 import PoemsPage from "./pages/PoemsPage";
 import AuthorsPage from "./pages/AuthorsPage";
 import AboutPage from "./pages/AboutPage";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./components/core/LanguageSwitcher";
 
 function App() {
+  const { i18n } = useTranslation();
+  const isRTL = ["ar", "ur"].includes(i18n.language);
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div
+      dir={isRTL ? "rtl" : "ltr"}
+      className="min-h-screen bg-background text-foreground"
+    >
+      <LanguageSwitcher />
+
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background shadow border-b border-border">
         <Navbar />
       </nav>
