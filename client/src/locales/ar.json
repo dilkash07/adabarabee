@@ -4,12 +4,52 @@
   "poems": "القصائد",
   "authors": "الشعراء",
   "about": "من نحن",
-  "signup": "إنشاء حساب",
-  "login": "تسجيل الدخول",
-  "email": "البريد الإلكتروني",
-  "password": "كلمة المرور",
-  "confirmPassword": "تأكيد كلمة المرور",
-  "forgotPassword": "نسيت كلمة المرور؟",
-  "sendResetLink": "إرسال رابط إعادة التعيين",
-  "backToLogin": "العودة لتسجيل الدخول"
+
+  "signup": {
+    "title": "إنشاء حساب",
+    "subtitle": "يرجى تعبئة النموذج لإنشاء حساب جديد.",
+    "usernameLabel": "اسم المستخدم",
+    "usernamePlaceholder": "أدخل اسم المستخدم",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "********",
+    "confirmPasswordLabel": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "********",
+    "submitButton": "إنشاء حساب",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "loginLink": "تسجيل الدخول"
+  },
+
+  "login": {
+    "title": "تسجيل الدخول",
+    "subtitle": "يرجى إدخال بياناتك لتسجيل الدخول إلى حسابك.",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "********",
+    "submitButton": "تسجيل الدخول",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "signupLink": "إنشاء حساب جديد"
+  },
+
+  "forgotPassword": {
+    "title": "نسيت كلمة المرور؟",
+    "subtitle": "أدخل بريدك الإلكتروني لإرسال رابط إعادة تعيين كلمة المرور.",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "example@email.com",
+    "submitButton": "إرسال رابط إعادة التعيين",
+    "backToLogin": "العودة إلى تسجيل الدخول"
+  },
+
+  "resetPassword": {
+    "title": "إعادة تعيين كلمة المرور",
+    "subtitle": "أدخل كلمة مرور جديدة لإعادة تعيين حسابك.",
+    "newPasswordLabel": "كلمة المرور الجديدة",
+    "confirmPasswordLabel": "تأكيد كلمة المرور",
+    "passwordPlaceholder": "********",
+    "submitButton": "تأكيد إعادة التعيين",
+    "backToLogin": "العودة إلى تسجيل الدخول"
+  }
 }

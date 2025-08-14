@@ -195,7 +195,7 @@ const Navbar = () => {
           <ModeToggle />
           <Link to="/login">
             <Button variant="outline" className="hidden md:inline">
-              {t("login")}
+              {t("login.title")}
             </Button>
           </Link>
 
@@ -235,7 +235,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/login" className="block hover:text-accent">
-                {t("login")}
+                {t("login.title")}
               </Link>
             </li>
           </ul>

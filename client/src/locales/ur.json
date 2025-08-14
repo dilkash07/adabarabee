@@ -4,12 +4,52 @@
   "poems": "نظمیں",
   "authors": "مصنفین",
   "about": "ہمارے بارے میں",
-  "signup": "سائن اپ",
-  "login": "لاگ ان",
-  "email": "ای میل",
-  "password": "پاس ورڈ",
-  "confirmPassword": "پاس ورڈ کی تصدیق کریں",
-  "forgotPassword": "پاس ورڈ بھول گئے؟",
-  "sendResetLink": "ری سیٹ لنک بھیجیں",
-  "backToLogin": "واپس لاگ ان پر جائیں"
+
+  "signup": {
+    "title": "اکاؤنٹ بنائیں",
+    "subtitle": "براہ کرم نیا اکاؤنٹ بنانے کے لیے فارم پُر کریں۔",
+    "usernameLabel": "صارف کا نام",
+    "usernamePlaceholder": "اپنا صارف نام درج کریں",
+    "emailLabel": "ای میل",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "پاس ورڈ",
+    "passwordPlaceholder": "********",
+    "confirmPasswordLabel": "پاس ورڈ کی تصدیق کریں",
+    "confirmPasswordPlaceholder": "********",
+    "submitButton": "سائن اپ کریں",
+    "alreadyHaveAccount": "کیا آپ کا پہلے سے اکاؤنٹ ہے؟",
+    "loginLink": "لاگ ان کریں"
+  },
+
+  "login": {
+    "title": "لاگ ان کریں",
+    "subtitle": "براہ کرم اپنے اکاؤنٹ میں لاگ ان کرنے کے لیے تفصیلات درج کریں۔",
+    "emailLabel": "ای میل",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "پاس ورڈ",
+    "passwordPlaceholder": "********",
+    "submitButton": "لاگ ان کریں",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "noAccount": "کیا آپ کا کوئی اکاؤنٹ نہیں ہے؟",
+    "signupLink": "نیا اکاؤنٹ بنائیں"
+  },
+
+  "forgotPassword": {
+    "title": "کیا آپ پاس ورڈ بھول گئے؟",
+    "subtitle": "پاس ورڈ ری سیٹ لنک بھیجنے کے لیے اپنا ای میل درج کریں۔",
+    "emailLabel": "ای میل",
+    "emailPlaceholder": "example@email.com",
+    "submitButton": "ری سیٹ لنک بھیجیں",
+    "backToLogin": "لاگ ان پر واپس جائیں"
+  },
+
+  "resetPassword": {
+    "title": "پاس ورڈ ری سیٹ کریں",
+    "subtitle": "اپنے اکاؤنٹ کو ری سیٹ کرنے کے لیے نیا پاس ورڈ درج کریں۔",
+    "newPasswordLabel": "نیا پاس ورڈ",
+    "confirmPasswordLabel": "پاس ورڈ کی تصدیق کریں",
+    "passwordPlaceholder": "********",
+    "submitButton": "ری سیٹ کی تصدیق کریں",
+    "backToLogin": "لاگ ان پر واپس جائیں"
+  }
 }

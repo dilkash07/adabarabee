@@ -4,12 +4,52 @@
   "poems": "Poems",
   "authors": "Authors",
   "about": "About Us",
-  "signup": "Sign Up",
-  "login": "Log In",
-  "email": "Email",
-  "password": "Password",
-  "confirmPassword": "Confirm Password",
-  "forgotPassword": "Forgot Password?",
-  "sendResetLink": "Send Reset Link",
-  "backToLogin": "Back to Login"
+
+  "signup": {
+    "title": "Create Account",
+    "subtitle": "Please fill out the form to create a new account.",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "********",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "********",
+    "submitButton": "Sign Up",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Log In"
+  },
+
+  "login": {
+    "title": "Log In",
+    "subtitle": "Please enter your details to log into your account.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "********",
+    "submitButton": "Log In",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "signupLink": "Create New Account"
+  },
+
+  "forgotPassword": {
+    "title": "Forgot your password?",
+    "subtitle": "Enter your email to send a password reset link.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "submitButton": "Send Reset Link",
+    "backToLogin": "Back to Login"
+  },
+
+  "resetPassword": {
+    "title": "Reset Password",
+    "subtitle": "Enter a new password to reset your account.",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "passwordPlaceholder": "********",
+    "submitButton": "Confirm Reset",
+    "backToLogin": "Back to Login"
+  }
 }
